@@ -1,0 +1,200 @@
+.settings-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+.settings-header {
+    margin-bottom: 2.5rem;
+}
+
+.settings-header h1 {
+    font-size: 2.2rem;
+    font-weight: 850;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+}
+
+.settings-tabs-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.settings-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.settings-section h3 {
+    font-size: 1.5rem;
+    font-weight: 850;
+    margin-bottom: 2rem;
+    color: #111;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sec-icon {
+    color: #ea580c;
+}
+
+.setting-tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.setting-tile:last-child {
+    border-bottom: none;
+}
+
+.tile-info h4 {
+    font-size: 1.1rem;
+    font-weight: 750;
+    margin-bottom: 0.25rem;
+    color: #111;
+}
+
+.tile-info p {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.tile-options {
+    display: flex;
+    gap: 0.5rem;
+    background: #f1f5f9;
+    padding: 0.25rem;
+    border-radius: 100px;
+}
+
+.opt-btn {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: 750;
+    font-size: 0.85rem;
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.opt-btn.active {
+    background: white;
+    color: #111;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.switch {
+    width: 60px;
+    height: 32px;
+    border-radius: 100px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.switch.on {
+    background: #ea580c;
+}
+
+.switch.off {
+    background: #e2e8f0;
+}
+
+.switch-dot {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.switch.on .switch-dot {
+    transform: translateX(28px);
+}
+
+.settings-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.btn-save-settings {
+    background: #ea580c;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 850;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px -5px rgba(234, 88, 12, 0.4);
+}
+
+.btn-save-settings:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(234, 88, 12, 0.5);
+}
+
+.danger-zone {
+    margin-top: 1rem;
+    background: #fff1f2;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid #fecdd3;
+}
+
+.danger-zone h4 {
+    color: #e11d48;
+    margin-bottom: 0.5rem;
+    font-weight: 850;
+}
+
+.danger-zone p {
+    font-size: 0.9rem;
+    color: #9f1239;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.btn-danger {
+    background: #e11d48;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 850;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-danger:hover {
+    background: #be123c;
+}
+@media (max-width: 900px) {
+    .settings-layout {
+        grid-template-columns: 1fr;
+    }
+}

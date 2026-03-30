@@ -1,0 +1,246 @@
+.edit-profile-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+.edit-container {
+    max-width: 1000px;
+}
+
+.edit-header {
+    margin-bottom: 2.5rem;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #64748b;
+    font-weight: 750;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    background: white;
+    color: #111;
+}
+
+.edit-header h1 {
+    font-size: 2.2rem;
+    font-weight: 850;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.edit-header p {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.edit-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+}
+
+.edit-tabs-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    color: #64748b;
+    font-weight: 750;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn:hover {
+    background: #e2e8f0;
+    color: #111;
+}
+
+.tab-btn.active {
+    background: #ea580c;
+    color: white;
+    box-shadow: 0 10px 20px -5px rgba(234, 88, 12, 0.4);
+}
+
+.tab-btn .tab-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-btn .tab-label {
+    flex-grow: 1;
+}
+
+.tab-btn .tab-arrow {
+    opacity: 0.5;
+}
+
+.tab-btn.active .tab-arrow {
+    opacity: 1;
+}
+
+.edit-form-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.form-section h3 {
+    font-size: 1.5rem;
+    font-weight: 850;
+    margin-bottom: 2rem;
+    color: #111;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sec-icon {
+    color: #ea580c;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group.full-width {
+    grid-column: span 2;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 750;
+    color: #475569;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    padding: 0.85rem 1.25rem;
+    border-radius: 10px;
+    border: 1.5px solid #e2e8f0;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    border-color: #ea580c;
+    box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.1);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.btn-save {
+    background: #ea580c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 850;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 20px -5px rgba(234, 88, 12, 0.4);
+}
+
+.btn-save:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px -5px rgba(234, 88, 12, 0.5);
+}
+
+.btn-save:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.error-alert, .success-alert {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+}
+
+.error-alert {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.success-alert {
+    background: #f0fdf4;
+    color: #22c55e;
+}
+
+@media (max-width: 900px) {
+    .edit-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .edit-tabs-sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    
+    .tab-btn {
+        white-space: nowrap;
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .input-group.full-width {
+        grid-column: span 1;
+    }
+}

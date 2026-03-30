@@ -1,0 +1,245 @@
+/* V10 Ultra Digital Plans Theme */
+.plans-page-v10 {
+    background: #f8fafc;
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding-bottom: 5rem;
+}
+
+.plans-hero-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem 10rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.plans-hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(234, 88, 12, 0.15);
+    color: #f97316;
+    padding: 0.6rem 1.25rem;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 850;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(234, 88, 12, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plans-hero-container h1 {
+    font-size: 3.5rem;
+    font-weight: 850;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.plans-hero-container p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 550;
+}
+
+/* Grids & Cards */
+.plans-content-wrapper {
+    margin-top: -6rem;
+    position: relative;
+    z-index: 10;
+}
+
+.plans-grid-v10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.5rem;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.plan-card-v10 {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card-v10:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    border-color: var(--accent, #ea580c);
+}
+
+.popular-ribbon {
+    position: absolute;
+    top: 25px;
+    right: -35px;
+    background: #ea580c;
+    color: white;
+    padding: 0.5rem 3.5rem;
+    transform: rotate(45deg);
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 5;
+}
+
+.card-header-v10 {
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.plan-icon-v10 {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.plan-name-v10 {
+    font-size: 1.8rem;
+    font-weight: 850;
+    margin-bottom: 1rem;
+}
+
+.plan-price-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.price-val {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #111;
+}
+
+.price-dur {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 700;
+}
+
+.card-body-v10 {
+    padding: 2.5rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-v10 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.benefits-v10 li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.check-circle {
+    width: 22px;
+    height: 22px;
+    background: #f0fdf4;
+    color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.select-plan-btn-v10 {
+    width: 100%;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 100px;
+    font-size: 1.15rem;
+    font-weight: 850;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+
+.select-plan-btn-v10:hover {
+    background: var(--accent, #ea580c);
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.plan-card-v10.popular .select-plan-btn-v10 {
+    background: #ea580c;
+}
+
+.plans-trust-footer {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-weight: 750;
+    font-size: 1.1rem;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+@media (max-width: 800px) {
+    .plans-hero-container h1 {
+        font-size: 2.2rem;
+    }
+    
+    .plans-grid-v10 {
+        grid-template-columns: 1fr;
+    }
+    
+    .plans-trust-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
